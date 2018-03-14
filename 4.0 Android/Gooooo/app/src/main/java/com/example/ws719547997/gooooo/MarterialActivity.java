@@ -65,7 +65,7 @@ public class MarterialActivity extends AppCompatActivity implements View.OnClick
         setSupportActionBar(toolbar);
 
         String clientId = MqttClient.generateClientId();
-        client = new MqttAndroidClient(this.getApplicationContext(), "tcp://140.143.222.251:1883",
+        client = new MqttAndroidClient(this.getApplicationContext(), "tcp://1.1.1.1:1883",
                 clientId);
 
         collapsingToolbar.setTitle("环境数据");
@@ -127,8 +127,8 @@ public class MarterialActivity extends AppCompatActivity implements View.OnClick
                 if(isMqtt==false){
                     try {
                         MqttConnectOptions Mqttoptions=new MqttConnectOptions();
-                        Mqttoptions.setUserName("root");
-                        Mqttoptions.setPassword("ws123456".toCharArray());
+                        Mqttoptions.setUserName("name");
+                        Mqttoptions.setPassword("password".toCharArray());
                         Mqttoptions.setCleanSession(true);
                         IMqttToken token = client.connect(Mqttoptions);
                         token.setActionCallback(new IMqttActionListener() {
