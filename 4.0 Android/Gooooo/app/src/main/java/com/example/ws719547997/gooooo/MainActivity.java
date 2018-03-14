@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        client = new MqttAndroidClient(this.getApplicationContext(),"tcp://123.206.78.45:1883",
+        client = new MqttAndroidClient(this.getApplicationContext(),"tcp://1.1.1.1:1883",
                         "android mqtt client");
 
 
