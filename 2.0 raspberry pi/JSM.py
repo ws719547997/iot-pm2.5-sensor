@@ -4,8 +4,8 @@ import paho.mqtt.client as mqtt
 
 ser=serial.Serial("/dev/ttyAMA0",115200)
 mqttc = mqtt.Client()
-mqttc.username_pw_set('root','ws123456')
-mqttc.connect("140.143.222.251")
+mqttc.username_pw_set('username','password')
+mqttc.connect("1.1.1.1")
 print("done!")
 
 while True:
