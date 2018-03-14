@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="140.143.222.251"
+        android:text="your sever ip"
         android:textColor="#b6b6b6"
         android:textSize="20dp" />
 
